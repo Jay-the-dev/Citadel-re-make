@@ -1,0 +1,8 @@
+.section{
+    border-left: 1px solid rgba(5, 20, 35, .23);
+    content: "";
+    height: 80dvh;
+    left: 0;
+    right: 50px;
+    position: relative;
+}
