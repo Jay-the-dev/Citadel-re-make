@@ -1,4 +1,4 @@
-// Stats JavaScript - Add this to your existing script section
+// Stats JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     // Stats section functionality
 });
@@ -58,27 +58,27 @@ if (clientLoginBtn) {
 }
 
 // Handle dropdown clicks
-const dropdownLinks = document.querySelectorAll('.dropdown a');
-dropdownLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        console.log('Dropdown link clicked:', this.textContent);
-        // Add your dropdown navigation logic here
-    });
-});
+// const dropdownLinks = document.querySelectorAll('.dropdown a');
+// dropdownLinks.forEach(link => {
+//     link.addEventListener('click', function(e) {
+//         e.preventDefault();
+//         console.log('Dropdown link clicked:', this.textContent);
+//         // Add your dropdown navigation logic here
+//     });
+// });
 
-// Close dropdown when clicking outside
-document.addEventListener('click', function(e) {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    dropdowns.forEach(dropdown => {
-        if (!dropdown.contains(e.target)) {
-            const dropdownContent = dropdown.querySelector('.dropdown-content');
-            if (dropdownContent) {
-                dropdownContent.style.display = 'none';
-            }
-        }
-    });
-});
+// // Close dropdown when clicking outside
+// document.addEventListener('click', function(e) {
+//     const dropdowns = document.querySelectorAll('.dropdown');
+//     dropdowns.forEach(dropdown => {
+//         if (!dropdown.contains(e.target)) {
+//             const dropdownContent = dropdown.querySelector('.dropdown-content');
+//             if (dropdownContent) {
+//                 dropdownContent.style.display = 'none';
+//             }
+//         }
+//     });
+// });
 
 // Add any JavaScript functionality here if needed
 document.addEventListener('DOMContentLoaded', function() {

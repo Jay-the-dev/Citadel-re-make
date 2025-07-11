@@ -53,8 +53,3 @@
             }, 100);
         });
     });
-
-    // Handle image load errors
-    placeImage.addEventListener('error', function() {
-        this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjM1MCIgdmlld0JveD0iMCAwIDUwMCAzNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iMzUwIiBmaWxsPSIjRjNGNEY2Ii8+CjxwYXRoIGQ9Ik0yMzUgMTQwSDI2NVYxNzBIMjM1VjE0MFpNMjM1IDIxMEgyNjVWMTgwSDIzNVYyMTBaTTIwNSAxNzBIMjM1VjIwMEgyMDVWMTcwWk0yNjUgMTcwSDI5NVYyMDBIMjY1VjE3MFoiIGZpbGw9IiNEMUQ1REIiLz4KPC9zdmc+';
-    });
