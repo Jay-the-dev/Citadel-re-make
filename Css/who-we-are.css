@@ -1,8 +1,9 @@
 /* Image container */
 .image-container{
     position: relative;
+    top: 88px;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     padding: 32px 10px 32px 64px;
     z-index: 0;
@@ -14,7 +15,7 @@
     object-fit: cover;
 }
 
-/* Hero Section */
+/* ======== Hero Section ======= */
 .who-we-are-hero{
     background-color: transparent;
     margin-right: 4rem;
@@ -22,6 +23,7 @@
     bottom: 180px;
     height: 91.666667%;
     padding-bottom: 104px;
+    z-index: 0;
 }
 
 .who-we-are-hero .header-bg h1{
@@ -33,6 +35,7 @@
     font-weight: 600;
     line-height: 1;
     background-color: #075985;
+    z-index: 10;
 }
 .who-we-are-section-content {
     color: #777;

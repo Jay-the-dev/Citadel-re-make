@@ -1,0 +1,215 @@
+/* Image Container */
+.image-container{
+    position: relative;
+    top: 60px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 32px 10px 32px 56px;
+    z-index: 0;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.what-we-do-content{
+    position: absolute;
+    bottom: 60%;
+    left: 10%;
+    color: #fff;
+    z-index: 1;
+    font-size: 28px;
+}
+.what-we-do-hero{
+    background-color: transparent;
+    margin-right: 4rem;
+    position: relative;
+    bottom: 128px;
+    height: 91.666667%;
+    z-index: 10;
+    margin-bottom: 0;
+}
+.what-we-do-hero .header-bg h1{
+    color: white;
+    padding: 3.5rem;
+    width: 70%;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    background-color: #075985;
+    z-index: 10;
+}
+
+/*  ======= citadel section ========  */
+#ideas{
+    background: #ddd;
+    width: 100%;
+    max-height: 145vh;
+    margin-bottom: 100px;
+}
+.ideas-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 64px 32px 72px 64px;
+}
+.ideas-content-left h1{
+    font-size: 40px;
+}
+.ideas-content-left h1> span{
+    color: #082d86;
+}
+.ideas-content-right{
+    display: flex;
+    align-items: center;
+}
+.ideas-content-right p{
+    color: #464649;
+}
+.weather-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.weather-content-left img{
+    width: 100%;
+    height: auto;
+}
+.weather-content-right h1{
+    width: 100%;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #082d86;
+}
+.weather-content-right p{
+    padding-right: 72px;
+    color: #464649;
+}
+
+/* ====== Strategies Section ====== */
+#strategies{
+    padding: 64px 20px 56px 56px;
+}
+.strategies-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.strategies-header h1{
+    font-size: 40px;
+    color: #030b1e;
+}
+.strategies-header h1> span{
+    color: #082d86;
+}
+.strategies-header p{
+    color: #5f5f65;
+}
+.strategies-careers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: auto;
+}
+.careers{
+    border-left: 1px solid rgba(5, 20, 35, 0.23);
+    padding: 20px 20px 0 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.career-header h5{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #020b39;
+    margin-bottom: 40px;
+}
+.careers p{
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.careers a{
+    color: #0822aa;
+    text-decoration: none;
+}
+.career-icon{
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+}
+span.career-icon i{
+    font-size: 20px;
+    font-weight: 200;
+}
+.career-image{
+    margin-top: 35px;
+}
+.career-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ======== Competition ======== */
+#competition{
+    background: #08225a;
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    padding-bottom: 60px;
+}
+.competition-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.competition-image img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 50px;
+}
+.competition-text{
+    display: flex;
+    align-items: center;
+}
+.competition-text h1{
+    font-size: 40px;
+    color: #fff;
+}
+.competition-text h1> span{
+    color: #7180ca;
+}
+
+/*  ADVANTAGE */
+.advantage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 32px 50px 50px 64px;
+}
+.advantage-content{
+    color: #fff;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 20px 0 30px;
+}
+.advantage-header h5{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+}
+.advantage-content p{
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* ======= RECOGNIZE ========= */
+#recognize{
+    background-color: #fff;
+    padding: 96px 50px 50px 64px;
+}

@@ -37,25 +37,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
  
  // Header JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-// Add click events to navigation items
-});
-const navItems = document.querySelectorAll('nav ul li');
-navItems.forEach(item => {
-    item.addEventListener('click', function() {
-        console.log('Navigation item clicked:', this.textContent);
-        // Add your navigation logic here
-    });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+// // Add click events to navigation items
+// });
+// const navItems = document.querySelectorAll('nav ul li');
+// navItems.forEach(item => {
+//     item.addEventListener('click', function() {
+//         console.log('Navigation item clicked:', this.textContent);
+//         // Add your navigation logic here
+//     });
+// });
 
-// Add click event to client login button
-const clientLoginBtn = document.querySelector('.client-login button');
-if (clientLoginBtn) {
-    clientLoginBtn.addEventListener('click', function() {
-        console.log('Client login button clicked');
-        // Add your login logic here
-    });
-}
+// // Add click event to client login button
+// const clientLoginBtn = document.querySelector('.client-login button');
+// if (clientLoginBtn) {
+//     clientLoginBtn.addEventListener('click', function() {
+//         console.log('Client login button clicked');
+//         // Add your login logic here
+//     });
+// }
 
 // Handle dropdown clicks
 // const dropdownLinks = document.querySelectorAll('.dropdown a');
