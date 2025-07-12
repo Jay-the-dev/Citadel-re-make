@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do | Citadel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #000;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #000 0%, #333 100%);
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #000;
+            font-weight: 300;
+        }
+
+        .section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #000;
+            font-weight: 400;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #000;
+        }
+
+        /* Stats Section */
+        .stats {
+            background: #f8f9fa;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            padding: 1.5rem;
+        }
+
+        .stat-item h3 {
+            color: #000;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Awards Section */
+        .awards {
+            background: #000;
+            color: #fff;
+            padding: 4rem 0;
+        }
+
+        .awards h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .award-item {
+            background: #333;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #666;
+            transition: all 0.3s ease;
+        }
+
+        .award-item:hover {
+            border-left-color: #fff;
+            transform: translateX(5px);
+        }
+
+        .award-year {
+            color: #ccc;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            color: #ccc;
+            max-width: 800px;
+            margin: 1rem auto;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section h2 {
+                font-size: 2rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">CITADEL</div>
+                <nav>
+                    <ul>
+                        <li><a href="#approach">Our Approach</a></li>
+                        <li><a href="#strategies">Strategies</a></li>
+                        <li><a href="#people">People</a></li>
+                        <li><a href="#technology">Technology</a></li>
+                        <li><a href="#risk">Risk Management</a></li>
+                        <li><a href="#awards">Awards</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>What We Do</h1>
+                <p>Our thinking reveals possibilities unimagined by others. Together, we move swiftly to capture opportunities in the markets.</p>
+            </div>
+        </section>
+
+        <section id="approach" class="section">
+            <div class="container">
+                <h2 class="fade-in">Our Approach</h2>
+                <p class="fade-in">Drive capital to the world's most impactful and compelling investments, leveraging our combination of talent, technology, analytics and global scale.</p>
+                <p class="fade-in">We will explore any territory in pursuit of an idea, taking unconventional approaches and making big, bold investments in unexpected places.</p>
+                
+                <div class="card fade-in">
+                    <h3>Weather Analytics Innovation</h3>
+                    <p>From agricultural products to natural gas, changes in the weather play a key role in determining the prices of commodities. We asked: What if we could forecast those changes better than anyone else?</p>
+                    <p>Our Commodities strategy has assembled a team of PhD-level atmospheric scientists who understand and can predict signals generated from weather phenomena, from windstorms that last two days to El Nino events that last a season. Working in tandem with a team of High-Performance Computing specialists, they've built a differentiated applied research operation.</p>
+                    <p>Today, they help transform terabytes of data a day into actionable forecasts, communicating weather-driven commercial opportunities and risks to our investment teams. Their tools and proprietary weather models provide answers to research queries in a fast, flexible manner. Weather analytics are now embedded in investment decisions, representing a unique depth of capability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategies" class="section stats">
+            <div class="container">
+                <h2 class="fade-in">Our Strategies</h2>
+                <p class="fade-in">Across all major asset classes and geographies, we have a singular focus: delivering industry-leading returns.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <h3>Commodities</h3>
+                        <p>We are one of the largest alternative investment managers in the commodities markets.</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3>Corporate Credit</h3>
+                        <p>We are one of the most significant alternative investment managers in the public U.S. corporate credit markets.</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3>Equities</h3>
+                        <p>Equities represents one of the largest and longest tenured strategies at Citadel.</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3>Fixed Income & Macro</h3>
+                        <p>We are a leading fixed income and macro investor.</p>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <h3>Global Quantitative Strategies</h3>
+                        <p>GQS is one of the most significant quantitative trading teams in the industry.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="people" class="section">
+            <div class="container">
+                <h2 class="fade-in">Our People</h2>
+                <p class="fade-in">Talent from across finance, science, technology and other fields gather here.</p>
+                
+                <div class="grid">
+                    <div class="card fade-in">
+                        <h4>Extraordinary Growth</h4>
+                        <p>Our firm is a place for extraordinary growth. Our people benefit from our unparalleled resources and learn from the talent assembled around them.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h4>Peak Performance</h4>
+                        <p>This combination of talent, collaboration and inspiration empowers our people to work at the peak of their potential.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technology" class="section">
+            <div class="container">
+                <h2 class="fade-in">Technology</h2>
+                <p class="fade-in">Technology is the lifeblood of our firm. Our ambitious thinking frequently requires innovations that don't yet exist—so it's up to us to build them.</p>
+                <p class="fade-in">Our engineering and quantitative research teams drive us forward with proprietary technology and tools, models and algorithms created in partnership with the investment teams. Their ingenuity solves entirely new problems in often surprising ways. And as technology evolves, so do we.</p>
+            </div>
+        </section>
+
+        <section id="risk" class="section">
+            <div class="container">
+                <h2 class="fade-in">Risk Management</h2>
+                <p class="fade-in">Risk managers are specialists in the asset classes they cover, enabling more productive dialogue with investment professionals.</p>
+                <p class="fade-in">The Portfolio Construction and Risk Group operates independently of our investment team and reports directly to the CEO. The Group identifies key risk exposures and performance drivers, monitors risk tolerance levels, fosters a strong risk management culture and refines the technology platform that provides the firm with robust analysis.</p>
+                <p class="fade-in">From our Risk Management Center, the firm's positions experience constant monitoring, review and automated testing—with investment professionals using constantly updated stress-testing scenarios.</p>
+            </div>
+        </section>
+
+        <section id="awards" class="awards">
+            <div class="container">
+                <h2 class="fade-in">Awards & Recognition</h2>
+                <p class="fade-in" style="text-align: center; margin-bottom: 3rem;">In an industry where the drive to prove yourself never ends, we are consistently recognized for our achievements.</p>
+                
+                <div class="awards-grid">
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>Risk.net's Risk Awards – Hedge Fund of the Year</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>Korean Economic Daily (KED) Global – Best Performance – Absolute Return Strategy (Large Cap)</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>Markets Media Global Markets Choice Awards – Best Quantitative Investment Team</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>LCH Investments NV – Citadel Ranked #1 of Great Money Managers by Net Gains since inception</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>Institutional Investor – Institutional Hedge Fund Manager of the Year</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>Institutional Investor – Multistrategy Hedge Fund Manager of the Year</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>Institutional Investor – Macro Hedge Fund Manager of the Year</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>eFinancialCareers – #1 Ideal Hedge Fund Employer</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2024</div>
+                        <p>GlobalCapital – Hedge Fund of the Year</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2023</div>
+                        <p>HFM U.S. Performance Awards – Management Firm of the Year</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2022</div>
+                        <p>LCH Investments NV – Citadel Ranked #1 of Top Hedge Fund Managers by Net Gains since inception</p>
+                    </div>
+                    <div class="award-item fade-in">
+                        <div class="award-year">2021</div>
+                        <p>LCH Investments NV – Citadel Ranked #2 of Top Hedge Fund Managers by Net Gains Since Inception</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> Citadel's risk management protocols should not be considered an assurance that losses will not be incurred. There are risks that are not monitored or controlled by Citadel and risks that may be greater than forecasted by Citadel, especially in unusual market conditions. Significant or complete losses may result from these risks or other reasons despite Citadel's risk management protocols or any information provided herein.</p>
+            </div>
+            <p>&copy; 2024 Citadel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(0, 0, 0, 0.95)';
+                header.style.backdropFilter = 'blur(10px)';
+            } else {
+                header.style.background = '#000';
+                header.style.backdropFilter = 'none';
+            }
+        });
+
+        // Card hover effects
+        document.querySelectorAll('.card, .award-item').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
