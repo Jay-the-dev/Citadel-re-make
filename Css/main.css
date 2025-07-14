@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: TT Commons,HelveticaNeueLTStd-Roman,Helvetica,Arial,sans-serif;
     line-height: 1.6;
 }
 
@@ -281,7 +281,7 @@ nav ul li:hover {
 }
 /* Hero section styles */
 .hero {
-    background-color: #f3f4f6;
+    /* background-color: #f3f4f6; conflict */
     margin-right: 4rem;
     position: relative;
     bottom: 66px;
@@ -306,8 +306,8 @@ nav ul li:hover {
     font-size: 18px;
     font-weight: 600;
     line-height: 1;
-    background-color: #075985;
-    z-index: 10;
+    background-color: rgba(20,74,165,.57);
+    backdrop-filter: blur(15px);
 }
 
 .section-content {

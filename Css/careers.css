@@ -1,0 +1,192 @@
+/* Image Container */
+.image_container{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 32px 0 32px 56px;
+    z-index: 0;
+}
+.image_container img{
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.careers-content{
+    position: absolute;
+    bottom: 65%;
+    left: 10%;
+    color: #fff;
+    z-index: 1;
+    font-size: 28px;
+
+}
+.careers-content h1{
+    font-weight: 500;
+}
+/* HERO SECTION */
+.careers-hero{
+    background: transparent;
+    position: relative;
+}
+.hero-bg{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    position: relative;
+    bottom: 177px;
+    background-color: #144aa591;
+    backdrop-filter: blur(15px);
+    padding: 2.5rem ;
+    width: 90%;
+    margin-left: 56px;
+}
+.hero-text{
+    display: flex;
+    align-items: center;
+}
+.hero-text h2{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero-link{
+    padding-bottom: 20px;
+}
+
+/* ======== Roles ========== */
+#roles{
+    padding: 64px 50px 56px 56px;
+}
+.roles-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.roles-header h1{
+    font-size: 40px;
+    color: #030b1e;
+}
+.roles-header h1> span{
+    color: #082d86;
+}
+.roles-header p{
+    color: #5f5f65;
+    font-size: 18px;
+    letter-spacing: -.2px;
+}
+.roles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    height: auto;
+}
+.role{
+    border-left: 1px solid rgba(5, 20, 35, 0.23);
+    padding: 20px 20px 0 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.role-header h5{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #020b39;
+}
+.role p{
+    color: #777;
+    font-size: 14px;
+}
+.role a{
+    color: #0822aa;
+    text-decoration: none;
+}
+.role-icon{
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+}
+span.role-icon i{
+    font-size: 20px;
+    font-weight: 200;
+}
+.role-image img{
+    margin-top: 35px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ======== OPPORTUNTIES ========= */
+#opportunities{
+    margin-bottom: 64px;
+}
+.opportunities{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 50px 0 0;
+    height: 50vh;
+    margin-top: 32px;
+}
+.opportunities-image img{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.oppurtunities_content h1{
+    color: #08225a;
+    font-size: 48px;
+    margin-bottom: 64px;
+}
+.oppurtunities_content h1> span{
+    color: #144aa5;
+}
+.opportunities_content_text p{
+    color: #68717a;
+    font-size: 1.25rem;
+}
+
+/* ======= Page ======= */
+#page {
+    background: #f0f0f0;
+    padding: 170px 56px 50px 64px;
+}
+.pages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 65vh;
+}
+.page{
+    border-left: 1px solid rgba(5, 20, 35, 0.23);
+    padding: 20px 30px 0 20px;
+    cursor: pointer;
+}
+.page h5{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #020b39;
+    margin-bottom: 40px;
+}
+.page p{
+    color: #777;
+    font-size: 14px;
+}
+.page a{
+    color: #0822aa;
+    text-decoration: none;
+}
+.page-icon{
+    margin-left: 20px;
+    position: relative;
+    top: 2px;
+}
+span.page-icon i{
+    font-size: 20px;
+    font-weight: 200;
+}
