@@ -182,6 +182,109 @@
                 </div>
             </div>
        </section>
+
+       <!-- Video slider Section -->
+        <section id="culture">
+            <div class="culture-top">
+                <h1>A Culture Where <br><span>Talent Can Thrive</span></h1>
+                <p>Brilliant and driven people flourish at our firm. They follow their passions and share their skills to help everyone learn and grow. Hear their stories.</p>
+            </div>
+            
+            <div class="slider-container">
+                <nav class="header-nav">
+                    <button class="header-btn active" data-target="0">
+                        <div class="inner-btn">
+                            <span>Julia</span>
+                            <span>Investing</span>
+                        </div> 
+                        <span>1/6</span>
+                    </button>
+                    <button class="header-btn" data-target="1">Tab 2</button>
+                    <button class="header-btn" data-target="2">Tab 3</button>
+                    <button class="header-btn" data-target="3">Tab 4</button>
+                    <button class="header-btn" data-target="4">Tab 5</button>
+                    <button class="header-btn" data-target="5">Tab 6</button>
+                </nav>
+
+                <div class="media-container" id="mediaContainer">
+                    <div class="media-item">
+                        <div class="media-content">
+                            <div class="media-placeholder">Image/Video 1</div>
+                            <h3 class="media-title">Content 1</h3>
+                            <p class="media-description">This is the first media item content.</p>
+                        </div>
+                    </div>
+
+                    <div class="media-item">
+                        <div class="media-content">
+                            <div class="media-placeholder">Image/Video 2</div>
+                            <h3 class="media-title">Content 2</h3>
+                            <p class="media-description">This is the second media item content.</p>
+                        </div>
+                    </div>
+
+                    <div class="media-item">
+                        <div class="media-content">
+                            <div class="media-placeholder">Image/Video 3</div>
+                            <h3 class="media-title">Content 3</h3>
+                            <p class="media-description">This is the third media item content.</p>
+                        </div>
+                    </div>
+
+                    <div class="media-item">
+                        <div class="media-content">
+                            <div class="media-placeholder">Image/Video 4</div>
+                            <h3 class="media-title">Content 4</h3>
+                            <p class="media-description">This is the fourth media item content.</p>
+                        </div>
+                    </div>
+
+                    <div class="media-item">
+                        <div class="media-content">
+                            <div class="media-placeholder">Image/Video 5</div>
+                            <h3 class="media-title">Content 5</h3>
+                            <p class="media-description">This is the fifth media item content.</p>
+                        </div>
+                    </div>
+
+                    <div class="media-item">
+                        <div class="media-content">
+                            <div class="media-placeholder">Image/Video 6</div>
+                            <h3 class="media-title">Content 6</h3>
+                            <p class="media-description">This is the sixth media item content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="strongest_ideas">
+            <div class="strongest_ideas">
+                <div class="ideas_in_action">
+                    <h2>See Your Strongest<br><span>Ideas in Action</span></h2>
+                    <p>Our teams have the responsibility to solve vitally important problems. We debate, refine and implement our strongest ideas in pursuit of the best possible outcome.</p>
+                    <a href="#" class="explore-btn">
+                        View Open Roles
+                    </a>
+                </div>
+                <div class="ideas_quote">
+                    <p>
+                        I knew from the beginning it would take a team of the best and brightest—truly extraordinary colleagues with exceptional intellect, passion and creativity—to succeed. <br>
+                    
+                        incredible power of this belief—that over the years, the collective talents and ambitions of our team would change the world of finance.
+                   </p>
+                   <div class="author">
+                        <p class="name">
+                            Ken Griffin
+                            <span>Founder and CEO</span>
+                        </p>
+                        <div class="founder_image">
+                            <img src="" alt="image of the founder">
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
     <!-- Footer -->
     <footer id="footer">
         <div class="footer-nav">
@@ -234,5 +337,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const container = document.getElementById('mediaContainer');
+        const buttons = document.querySelectorAll('.header-btn');
+
+        buttons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                buttons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Calculate scroll position (80% width per item)
+                const scrollPosition = index * (container.offsetWidth * 0.8);
+                
+                // Scroll to position
+                container.scrollTo({
+                    left: scrollPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Update active button when scrolling manually
+        container.addEventListener('scroll', () => {
+            const scrollLeft = container.scrollLeft;
+            const itemWidth = container.offsetWidth * 0.8;
+            const currentIndex = Math.round(scrollLeft / itemWidth);
+            
+            buttons.forEach((btn, index) => {
+                btn.classList.toggle('active', index === currentIndex);
+            });
+        });
+    </script>
 </body>
 </html>
