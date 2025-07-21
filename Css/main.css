@@ -111,8 +111,51 @@ nav ul li:hover {
 }
 
 .client-login button:hover {
-    text-decoration: underline;
     color: #0369a1;
+}
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #0369a1;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 32px;
+    top: 24px;
+    z-index: 200;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 0;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .client-login {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 /* Header responsive design */

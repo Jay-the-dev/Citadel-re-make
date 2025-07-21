@@ -16,30 +16,34 @@
 </head>
 <body>
     <!-- Header -->
-     <header id="header">
+    <header id="header">
         <div class="logo">
             <a href="index.html">
-                <img src="https://www.citadel.com/wp-content/uploads/2022/12/Citadel-Logo.png" alt="Logo" width="227px" >
+            <img src="https://www.citadel.com/wp-content/uploads/2022/12/Citadel-Logo.png" alt="Logo" width="227px">
             </a>
-        </div> 
+        </div>
+
+        <!-- Mobile Toggle Button -->
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776;
+        </div>
+
         <nav>
-            <ul>
-                <div class="dropdown">
-                    <a href="who-we-are.html" target="_parent">Who we are</a>
-                    <!-- Dropdown -->
-                    <!-- <div class="dropdown-content">
-                        <a href="#">Our Culture</a>
-                    </div> -->
-                </div>
-                <li><a href="what-we-do.html">What we do</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="careers.html">Careers</a></li>
+            <ul id="nav-list">
+            <div class="dropdown">
+                <a href="who-we-are.html" target="_parent">Who we are</a>
+            </div>
+            <li><a href="what-we-do.html">What we do</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="careers.html">Careers</a></li>
             </ul>
         </nav>
+
         <div class="client-login">
             <button>Client login</button>
         </div>
-    </header>
+   </header>
+
 
     <!-- Video container -->
     <div class="video-container">
@@ -289,5 +293,14 @@
     </footer>
 
     <script src="./Script/script.js"></script>
+    <script>
+        const toggleBtn = document.getElementById("menu-toggle");
+        const navList = document.getElementById("nav-list");
+
+        toggleBtn.addEventListener("click", () => {
+        navList.classList.toggle("show");
+           });
+   </script>
+
 </body>
 </html>
