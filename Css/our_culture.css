@@ -1,0 +1,321 @@
+#our_culture_hero{
+    width: 100%;
+    height: 125vh;
+    padding: 100px 0 50px 64px;
+}
+.our_culture_hero{
+    background: #144aa5;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    padding: 50px 0 32px 64px;
+}
+.our_culture_header{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.our_culture_path{
+    margin-bottom: 30px;
+}
+.our_culture_path a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+}
+.our_culture_path a:hover{
+    color: #fff;
+}
+.our_culture_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 150px;
+}
+.our_culture_text h1{
+    font-size: 55px;
+    font-weight: 500;
+}
+.our_culture_text p{
+    font-size: 18px;
+}
+.our_culture_image img{
+    margin-top: 32px;
+    width: 100%;
+    min-height: 50vh;
+    height: 90vh;
+    object-fit: cover;
+}
+
+/* GRID BOX */
+.grid_box{
+    margin-bottom: 84px;
+    padding: 50px 64px 32px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.grid_header h2{
+    color: #08225a;
+    font-size: 45px;
+    font-weight: 500;
+}
+.grid_header h2> span{
+    color: #144aa5;
+}
+.grid_content{
+    padding-right: 32px;
+}
+.grid_content p{
+    color: #777;
+    font-size: 18px;
+}
+
+/* Our Core Values Section */
+#our_core_values{
+    background: #08225a;
+    width: 100%;
+    height: auto;
+}
+.our_core_values{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+}
+.core_values_image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    bottom: 102px;
+}
+.core_values_header{
+    padding: 32px 50px 50px 64px;
+}
+.core_values_header h2{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+}
+.core_values_header h2> span{
+    color: #558ff0;
+}
+.value_grid_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 64px 50px 64px;
+}
+.value{
+    border-left: 1px solid rgba(222, 252, 252, 0.3);
+    padding: 0 20px 0 25px;
+    color: #fff;
+    margin-top: 35px;
+}
+.value h4{
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+.value p{
+    font-size: 14px;
+    color: #f1ebeb;
+}
+
+/* CULTURE IN FOCUS */
+#culture_in_focus{
+    padding: 96px 0 50px 64px;
+}
+.culture_in_focus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.culture_in_focus_header h2{
+    color: #08225a;
+    font-size: 45px;
+    font-weight: 500;
+}
+.culture_in_focus_header h2> span{
+    color: #144aa5;
+}
+.culture_in_focus_content{
+    padding: 0 56px 0 0;
+}
+.culture_in_focus_content p{
+    color: #777;
+    font-size: 18px;
+}
+.content_social_links{
+    display: flex;
+    align-items: center;
+    color: #144aa5;
+}
+.content_social_links span{
+    font-size: 12px;
+    margin-right: 30px;
+}
+.content_social_links a{
+    padding: 10px 13px;
+    margin-right: 15px;
+    border: 1px solid #144aa5;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+}
+.content_social_links a> i{
+    font-size: 18px;
+}
+.content_social_links a:hover{
+    color: #08225a;
+    border: 1px solid #08225a;
+    background: #f0f0f0;
+}
+
+/* BENEFITS SECTION */
+#benefits{
+    padding: 96px 0 50px 0;
+}
+.benefits{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 20px 56px 50px 56px;
+}
+.benefits_header h3{
+    font-size: 55px;
+    color: #08225a;
+}
+.benefits_header h3> span{
+    color: #144aa5;
+}
+.benefits_text{
+    padding-right: 64px;
+}
+.benefits_text p{
+    font-size: 18px;
+    color: #777;
+}
+#citadel_benefits{
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+}
+.citadel_benefits_nav{
+    display: flex;
+    padding: 5px 56px 0 56px;
+}
+.citadel_benefits_nav li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    transition: all ease-in-out .3s;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.citadel_benefits_nav li:hover{
+    background: #144aa5;
+    color: #fff;
+    cursor: pointer;
+}
+.citadel_benefits_body{
+    margin-right: 32px;
+    background: #fff;
+    padding-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.citadel_benefits_image{
+    padding: 0 15px 10px 96px;
+}
+.citadel_benefits_image h4{
+    color: #08225a;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.citadel_benefits_image img{
+    width: 100%;
+    height: auto;
+}
+.citadel_benefits_content{
+    padding: 0 150px 0 40px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+.citadel_benefits_content p{
+    color: #777;
+    font-size: 18px;
+}
+/* GLOBAL OFFICES */
+#global_offices{
+    padding: 120px 56px 64px 64px;
+}
+.global_offices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+.global_offices_header h3{
+    font-size: 50px;
+    color: #08225a;
+    font-weight: 500;
+}
+.global_offices_header h3> span{
+    color: #144aa5;
+}
+.global_offices_content{
+    padding-right: 56px;
+}
+.global_offices_content p{
+    color: #777;
+    font-size: 18px;
+}
+.global_offices_gallery{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+.left-image img{
+    width: 100%;
+    height: auto;
+}
+.right-image img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* ==================== Leading thinkers ===================== */
+#leading_thinkers{
+    background: #f5f5f5;
+    padding-top: 72px;
+    padding-right: 64px;
+    min-height: 65vh;
+}
+.leading_thinkers{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 20px;
+}
+.leading_thinkers_image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.leading_thinkers_content {
+    padding: 0 56px 0 50px;
+}
+.leading_thinkers_content h2{
+    color: #08225a;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+.leading_thinkers_content h2> span{
+    color: #144aa5;
+}
+.leading_thinkers_content p{
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
